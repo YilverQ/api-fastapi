@@ -1,3 +1,6 @@
+#Archivo de guia para crear la configuración.
+installation.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
