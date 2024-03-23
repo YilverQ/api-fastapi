@@ -26,5 +26,9 @@ async def email_app_info():
 @emailApp.post('/send', status_code=200)
 async def email_send(email : Email):
     #Enviamos el correo electrónico.
+    send_email(to = email.to,
+                subject = email.subject,
+                body = email.body)
+
     result = {'response' : '¡Mensaje enviado sastifactoriamente!'}
     return result
